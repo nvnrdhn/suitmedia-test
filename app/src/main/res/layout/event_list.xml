@@ -6,29 +6,34 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/iv_guest_image"
+        android:id="@+id/iv_event_image"
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars[0]" />
+        tools:srcCompat="@tools:sample/avatars[3]" />
 
     <TextView
-        android:id="@+id/tv_guest_name"
+        android:id="@+id/tv_event_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#8F000000"
-        android:text="Novan"
-        android:textColor="@android:color/background_light"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Nama event"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/iv_event_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_event_image" />
+
+    <TextView
+        android:id="@+id/tv_event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tanggal event"
+        app:layout_constraintStart_toStartOf="@+id/tv_event_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_event_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
