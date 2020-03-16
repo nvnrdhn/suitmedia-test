@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SuitmediaTest</string>
+    <string name="preferences_key">com.nvnrdhn.suitmediatest.PREFERENCE_FILE_KEY</string>
+    <string name="local_data_key">com.nvnrdhn.suitmediatest.LOCAL_KEY</string>
 </resources>

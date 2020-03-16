@@ -16,7 +16,8 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity android:name=".GuestActivity"></activity>
-        <activity android:name=".EventActivity" />
+        <activity android:name=".EventActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".HomeActivity">
             <intent-filter>
@@ -25,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCTJPItuFMuiAJrVuMmnsYXsg8Hj1IixpE"/>
+
     </application>
 
 </manifest>

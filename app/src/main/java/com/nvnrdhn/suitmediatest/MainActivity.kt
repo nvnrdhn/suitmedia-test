@@ -41,7 +41,8 @@ class MainActivity : AppCompatActivity() {
         else if (requestCode == RC_GUEST && resultCode == Activity.RESULT_OK) {
             bt_guest.text = data?.getStringExtra(GUEST_NAME)
             val date = data?.getStringExtra(GUEST_BIRTHDATE)
-            Toast.makeText(this, birthCheck(date), Toast.LENGTH_LONG).show()
+            val prime = data?.getBooleanExtra(GUEST_MONTHPRIME, false)
+            Toast.makeText(this, birthCheck(date) + if (prime!!) "\nMonth is prime" else "\nMonth is not prime", Toast.LENGTH_LONG).show()
         }
     }
 
